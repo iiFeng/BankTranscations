@@ -1,6 +1,6 @@
-import Exporter.Exporter;
-import Exporter.HtmlExporter;
-import Exporter.SummaryStatistics;
+import exporter.Exporter;
+import exporter.HtmlExporter;
+import exporter.SummaryStatistics;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -30,6 +30,6 @@ public class Main {
         double max = bankDataAnalyzer.maxTransaction().getPrice();
         double min = bankDataAnalyzer.minTransaction().getPrice();
         double average = allTotal / list.size();
-        System.out.println(exporter.export(new SummaryStatistics(allTotal, max, min, average)));
+        System.out.println("html: "+exporter.export(new SummaryStatistics(allTotal, max, min, average)));
     }
 }

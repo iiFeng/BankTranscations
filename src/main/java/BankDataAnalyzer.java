@@ -1,7 +1,9 @@
-import java.time.LocalDate;
 import java.time.Month;
 import java.util.*;
 
+/**
+ * 统计分析类
+ */
 public class BankDataAnalyzer {
     private final List<BankData> list;
 

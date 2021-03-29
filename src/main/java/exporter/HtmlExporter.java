@@ -1,5 +1,8 @@
-package Exporter;
+package exporter;
 
+/**
+ * html 格式的实现接口类
+ */
 public class HtmlExporter implements Exporter {
     @Override
     public String export(SummaryStatistics summaryStatistics) {

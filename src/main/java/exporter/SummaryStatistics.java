@@ -1,5 +1,8 @@
-package Exporter;
+package exporter;
 
+/**
+ * 报告数据
+ */
 public class SummaryStatistics {
     private final double sum;
     private final double max;

@@ -1,6 +1,9 @@
 import java.time.DateTimeException;
 import java.time.LocalDate;
 
+/**
+ * 数据实体类
+ */
 public class BankData {
     LocalDate createTime;
     double price;
@@ -36,10 +39,7 @@ public class BankData {
         this.description = description;
     }
 
-   /* @Override
-    public String toString() {
-        return String.format("{localdate:%tc,price:%.2f,desc:%s}", this.createTime, this.price, this.description);
-    }*/
+
    @Override
    public String toString() {
        return "bankCalculation{" +

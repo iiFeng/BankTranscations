@@ -1,9 +1,14 @@
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 数据处理类
+ */
 public class BankDataCSVParser {
+
     List<Notification> list = new ArrayList<>();
 
     public BankData parseLine(String line) {
@@ -17,8 +22,9 @@ public class BankDataCSVParser {
 
         Notification notification = getValidate(bankData);
         if (notification.hasErrors()) {
-            list.add(notification);
+          list.add(notification);
         }
+
         return bankData;
     }
 
@@ -31,7 +37,7 @@ public class BankDataCSVParser {
     }
 
     public Notification getValidate(BankData bankData) {
-        return bankData.validate();
+      return  bankData.validate();
     }
 
     public List<Notification> notificationsList() {
